@@ -1,6 +1,6 @@
 package com.aaa;
 
-public class laptop {
+public class laptop implements Computer {
 
     public laptop(){
         System.out.println("laptop has been constructed");

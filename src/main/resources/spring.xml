@@ -4,20 +4,30 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="akash" class=" com.aaa.akash" >
+    <bean id="akash" class=" com.aaa.akash" autowire="byType">
+
+<!--        <property name="com" ref="com"></property>-->
 <!--      <property name="age" value="455"></property>                     we create an property then set an age of 455 for the int age , -->
 <!--                                                                       name = "age " will access the age in the private int age-->
 <!--        <property name="llaapp" ref="lap1"></property>              we doing autowireing in this ref = lap is autowired the laptop class-->
 
 <!--        <constructor-arg value="18"></constructor-arg>-->
-        <constructor-arg ref="lap1"></constructor-arg>
+<!--        <constructor-arg ref="lap1"></constructor-arg>-->
 
     </bean>
 
+<!--    <bean id="lap1" class=" com.aaa.laptop" >-->
+
+<!--    </bean>-->
+
+    <bean id="com" class=" com.aaa.laptop" primary="true">
 
 
-    <bean id="lap1" class=" com.aaa.laptop" >
+    </bean>
+
+    <bean id="com1" class=" com.aaa.dekstop" >
 
     </bean>
 
 </beans>
+

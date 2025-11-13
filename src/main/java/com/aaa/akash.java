@@ -2,7 +2,9 @@ package com.aaa;
 
 public class akash {
 
-    public laptop llaapp;  // this one is the laptop class in right side we doing in this class with the private and how we acces this
+    private Computer com;
+
+//    public laptop llaapp;  // this one is the laptop class in right side we doing in this class with the private and how we acces this
                            //   in setter and constructor injection we do in the below
 
     private int age;      // this one wecrearte the instance variable
@@ -25,24 +27,33 @@ public class akash {
         this.age = age;
     }
 
-    public laptop getLlaapp() {
-        return llaapp;                    // this one is setter injection for the laptop
+//    public laptop getLlaapp() {
+//        return llaapp;                    // this one is setter injection for the laptop
+//    }
+//
+//    public void setLlaapp(laptop llaapp) {
+//        this.llaapp = llaapp;
+//    }
+//
+//    public akash(laptop llaapp) {
+//        this.llaapp = llaapp;         // this one is contructor injection for laptop we run the laptop class in xml using constructor arg with ref
+//        System.out.println("laptop1 has construted");
+//    }
+
+
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLlaapp(laptop llaapp) {
-        this.llaapp = llaapp;
+    public void setCom(Computer com) {
+        this.com = com;
     }
-
-    public akash(laptop llaapp) {
-        this.llaapp = llaapp;         // this one is contructor injection for laptop we run the laptop class in xml using constructor arg with ref
-        System.out.println("laptop1 has construted");
-    }
-
-
 
     public void run(){
         System.out.println("they runs so fast");
 
-        llaapp.compile();      // we calling the llaapp in the laptop in the upper
+//        llaapp.compile();      // we calling the llaapp in the laptop in the upper
+
+        com.compile();
     }
 }

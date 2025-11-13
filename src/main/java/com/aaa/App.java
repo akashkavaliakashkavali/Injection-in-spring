@@ -10,7 +10,8 @@ public class App
     {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        akash result = (akash) context.getBean("akash");
+        akash result = (akash) context.getBean("akash");  // this is byname and
+//        akash result = context.getBean(akash.class); // this is bytype
         result.run();
 
         System.out.println(result.getAge());
